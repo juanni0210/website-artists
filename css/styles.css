@@ -1,0 +1,424 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*.full-container {
+    width: 100%;
+    margin: 0 auto;
+}*/
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-image: url("../images/header_bg.jpg");
+    background-size: cover;
+    height: 800px;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+
+.desknav {
+    padding: 40px 60px;
+}
+
+.social-links {
+    display: none;
+}
+
+
+/*news section*/
+.news a {
+    color: red;
+    margin-bottom: 2rem;
+}
+
+
+/*video section*/
+.video-section {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+    height: auto;
+}
+
+.video-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*artists section*/
+.artists-section button {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+}
+
+
+
+/*projects section*/
+.projects-section {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+    height: auto;
+}
+
+.poster {
+    background-image: url(../images/ink.jpg);
+    background-size: cover !important;
+    padding: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.poster h1, .poster button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+
+.poster button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+}
+
+
+/*footer*/
+.footer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer h6 {
+    /*color: #666;*/
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+
+.bottomnav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bottomnav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+.bottomnav ul li a {
+    padding: 2rem;
+    color: black;
+
+}
+
+.bottomnav ul li a:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.newsletter input {
+    width: 100%;
+    margin-top: 10px;
+    height: 35px;
+}
+
+#email {
+    border: 2px solid #cfcfcf;
+}
+
+#submit {
+    border: 2px solid #333;
+    color: #333;
+    background-color: transparent;
+    height: 40px
+}
+
+.bottomsocial a {
+    color: #333;
+    padding: 10px;
+}
+
+
+.designer {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.designer p {
+    color: #cfcfcf;
+    margin-left: 20px;
+}
+
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: white; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar h1 {
+    margin-left: 2rem;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+    color: red;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#page {
+  transition: margin-left .5s; /* If you want a transition effect */
+ 
+}
+
+.desknav ul {
+    display: none;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+@media only screen and (min-width: 480px) {
+    .logo img {
+        display: block;
+        width: 480px;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .footer {
+        width: 80%;
+    }
+    
+    #email {
+        width: 65%;
+    }
+    
+    #submit {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    
+    .social-links {
+        display: block;
+        padding-top: 50px;
+        padding-right: 60px;
+        text-align: right;
+    }
+    
+    .social-links a {
+        display: inline-block;
+        padding: 0.5rem;
+    }
+    
+    .social-links a:last-child {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    .social-links button {
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+
+    .desknav button {
+        display: none;
+    }
+    
+    .desknav ul {
+        display: block;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
+    .desknav ul li {
+        list-style-type: none;
+        display: inline-block;
+    }
+    
+    .desknav ul li a {
+        padding: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: bold;
+    }
+    
+    .desknav ul li a:first-child {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .bottomnav {
+        width: 100%;
+    }
+    
+    .newsletter {
+        width: 50%;
+        margin-right: 10%;
+    }
+    
+    #email {
+        width: 65%;
+    }
+    
+    .bottomsocial {
+        width: 40%;
+    }
+    
+    .icons {
+        margin-top: 35px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    header {
+        height: 730px;
+    }
+    
+    .footer {
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+    .bottomnav {
+        width: 40%;
+    }
+    
+    .bottomnav ul li a {
+        padding: 1.5rem;
+
+    }
+    
+    .newsletter {
+        width: 38%;
+        margin-right: 0;
+    }
+    
+    .bottomsocial {
+        width: 15%;
+    }
+    
+    .designer {
+        width: 90%;
+    }
+    
+    .designer p {
+        margin-left: 0;
+    }
+   
+}
